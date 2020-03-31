@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rA3-yb-ncU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="axF-9d-E3Z">
+            <objects>
+                <viewController id="rA3-yb-ncU" customClass="ViewController" customModule="URLReceiver" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ILq-5o-shT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL Sheme Receiver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3G5-O9-3Um">
+                                <rect key="frame" x="20" y="52" width="374" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing received from another application yet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63l-jH-alB">
+                                <rect key="frame" x="20" y="421" width="374" height="54.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3G5-O9-3Um" firstAttribute="leading" secondItem="ZLP-ot-RW1" secondAttribute="leading" constant="20" id="2AF-dr-jMZ"/>
+                            <constraint firstItem="63l-jH-alB" firstAttribute="leading" secondItem="ZLP-ot-RW1" secondAttribute="leading" constant="20" id="8sG-nS-1it"/>
+                            <constraint firstItem="63l-jH-alB" firstAttribute="centerY" secondItem="ILq-5o-shT" secondAttribute="centerY" id="Zw0-E3-B2S"/>
+                            <constraint firstItem="ZLP-ot-RW1" firstAttribute="trailing" secondItem="3G5-O9-3Um" secondAttribute="trailing" constant="20" id="pjx-xW-dmn"/>
+                            <constraint firstItem="ZLP-ot-RW1" firstAttribute="trailing" secondItem="63l-jH-alB" secondAttribute="trailing" constant="20" id="tW5-uc-U4G"/>
+                            <constraint firstItem="3G5-O9-3Um" firstAttribute="top" secondItem="ZLP-ot-RW1" secondAttribute="top" constant="8" id="tWJ-ic-VHe"/>
+                            <constraint firstItem="3G5-O9-3Um" firstAttribute="top" secondItem="ZLP-ot-RW1" secondAttribute="top" constant="8" id="xbF-3u-bpx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZLP-ot-RW1"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="63l-jH-alB" id="fXC-YD-zDR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NMu-Ur-JSF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="128"/>
+        </scene>
+    </scenes>
+</document>
